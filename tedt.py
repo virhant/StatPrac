@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 13 10:49:37 2025
-
-@author: virha
-"""
 str = "hello world"
 print(str)
 print(str, len(str))
