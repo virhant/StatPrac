@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats
 
@@ -10,9 +9,6 @@ rng.current = 1
 
 arr = np.array(list(rng() for _ in range(1000)))
 ser_arr = arr.reshape(-1, 2)
-#print(arr)
-#print(ser_arr)
-#print(ser_arr[0][0])
 
 k = 20
 hist = np.histogram2d(ser_arr[:, 0], ser_arr[:, 1], bins = [np.linspace(0 , 1, k + 1), np.linspace(0 , 1, k + 1)])[0]
