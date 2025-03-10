@@ -8,8 +8,10 @@ def rng(m = 2 ** 32, a = 1103515245, c = 12345):
 rng.current = 1
 
 #weights = np.random.dirichlet(np.ones(10)) # В примере указаные неправильные веса, так как их сумма не равна единице
-future_weights = list(rng() for _ in range(10))
-weights = np.array(future_weights) / sum(future_weights)
+#future_weights = list(rng() for _ in range(10))
+#weights = np.array(future_weights) / sum(future_weights)
+future_weights = (0.12, 0.3, 0.167, 0.24, 0.31, 0.54, 0.111, 0.02, 0.001, 0.2)
+weights = np.array(future_weights) / sum(future_weights) 
 digits = np.arange(10)
 
 sort_index = np.argsort(weights)
